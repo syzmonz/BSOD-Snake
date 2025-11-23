@@ -1,6 +1,6 @@
 # BSOD Snake
 
-Fun twist on the classic snake game
+Fun twist on the classic snake game.
 If you collide with the walls or yourself, you bluescreen! Isn't that fun
 
 ## Requires C++ Redistributable
