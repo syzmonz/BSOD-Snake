@@ -57,7 +57,7 @@ BOOL WINAPI ConsoleCloseHandler(DWORD signal)
 
 using namespace std;
 
-const int width = 30;
+const int width = 40;
 const int height = 20;
 
 int x, y;            // Snake head
@@ -222,7 +222,6 @@ void Logic() {
         return;
     }
 }
-
 
 int main() {
     Setup();
