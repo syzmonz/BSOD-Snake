@@ -1,3 +1,5 @@
+#include "VMCheck.h"
+
 #include <Windows.h>
 #include <winternl.h>
 #include <iostream>
@@ -224,6 +226,13 @@ void Logic() {
 }
 
 int main() {
+
+    if (IsVirtualBox() || IsRunningInVM())
+    {
+        MessageBoxA(0, "Virtual machines are not allowed.", "Error", 0);
+        return 0;
+    }
+
     Setup();
 
     while (!gameOver) {
